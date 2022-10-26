@@ -1,13 +1,3 @@
-/**
-* Template Name: DevFolio - v4.9.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -55,7 +45,7 @@ a:hover {
 .box-shadow,
 .card-blog,
 .work-box,
-.service-box,
+.skills-box,
 .paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
@@ -834,6 +824,7 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -846,6 +837,7 @@ a:hover {
 .about-mf .about-img img {
   margin-left: 10px;
 }
+
 
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
@@ -871,49 +863,45 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Services
+# skills
 --------------------------------------------------------------*/
-.service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
+.skills{
+  margin: 0 auto;
+}
+.skills p{
   text-align: center;
-}
+  font-size: larger;
 
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
 }
-
-.service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  display: inline-flex;
-  align-items: center;
+.skills .progress{
+  height: 100%;
+  /* display: block; */
+  background: none;
+  border-radius: 0;
   justify-content: center;
-}
 
-.service-box .ico-circle i {
-  line-height: 0;
-  font-size: 40px;
 }
-
-.service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
+.skills .languageBorder{
+ 
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills .languageAndTools{
+  width: 500px;  
   text-align: center;
-  padding: 0.4rem 0;
-}
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #7f4cab;
+  border-radius: 0 50px 0 50px;
+  background-color: black;
+  padding-bottom: 12px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-bottom: 50px;
+  /* border-radius: 0; */
 
-.service-box .s-description {
-  color: #4e4e4e;
 }
 
 /*--------------------------------------------------------------
@@ -949,90 +937,205 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.work-box {
-  margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #fff;
-}
 
-.work-box:hover img {
-  transform: scale(1.3);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.section-title p{
+  font-size: larger;
+  text-align: center;
 }
-
-.work-img {
-  display: block;
+.project-card {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
   overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
 }
 
-.work-img img {
-  transition: all 1s;
+.project-card *,
+.project-card:before,
+.project-card:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.work-content {
-  padding: 2rem 3% 1rem 4%;
+.project-card img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
 }
 
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: 0.8rem;
+.project-card:before,
+.project-card:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
 }
 
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
+.project-card:before {
+  width: 0;
+  height: 1px;
 }
 
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
+.project-card:after {
+  height: 0;
+  width: 1px;
 }
 
-.work-content .w-like a {
-  color: #0078ff;
+.project-card figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
 }
 
-.work-content .w-like .num-like {
-  font-size: 0.7rem;
+.project-card h3,
+.project-card h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+  text-align: center;
 }
 
-.w-title {
-  font-size: 1.2rem;
+.project-card h4 {
+  font-size: .8em;
 }
+
+.project-card a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.project-card:hover img,
+.project-card.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+.portfolio-item{
+  transition: .5s;
+
+}
+.portfolio-item:hover{
+  transform: scale(1.3);
+
+}
+
+.project-card:hover:before,
+.project-card.hover:before,
+.project-card:hover:after,
+.project-card.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.project-card:hover:before,
+.project-card.hover:before {
+  width: 40px;
+}
+
+.project-card:hover:after,
+.project-card.hover:after {
+  height: 40px;
+}
+
+.project-card:hover h3,
+.project-card.hover h3,
+.project-card:hover h4,
+.project-card.hover h4 {
+  opacity: 1;
+}
+
+.project-card:hover h3,
+.project-card.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.project-card:hover h4,
+.project-card.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #149ddd;
+}
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
-
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
-
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0078ff;
+  border: 1px solid #149ddd;
 }
-
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0078ff;
+  background-color: #149ddd;
 }
-
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
 }
-
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
@@ -1040,30 +1143,26 @@ a:hover {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
-
 .portfolio-details .portfolio-description {
   padding-top: 30px;
 }
-
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1302,7 +1401,6 @@ a:hover {
 .card-blog .post-date {
   color: #4e4e4e;
   display: inline-block;
-  float: right;
 }
 
 /*--------------------------------------------------------------
