@@ -937,7 +937,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-
+/* 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .section-title p{
   font-size: larger;
@@ -1106,62 +1106,109 @@ a:hover {
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
-}
-
+} */
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# 3D Portfolio Section
 --------------------------------------------------------------*/
-/* .portfolio-details {
-  padding-top: 40px;
+.threed-container{
+  margin: 0;
+  font-family: sans-serif;
 }
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.threed-container .a{
+  text-decoration: none;
+  color: inherit;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #149ddd;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
+
+.threed-container ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
 }
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
+
+.threed-container {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  background-color: #0b0b15;
+  /* background-color: white; */
 }
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
+
+.cards {
+  --gap: 4rem;
+  max-width: 64rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
 }
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
+
+.card {
+  width: calc(50% - (var(--gap) / 2));
+  min-width: 16rem;
+  perspective: 2000px;
+}
+.card__inner {
+  --radius: 8px;
+  position: relative;
+  padding: 0.64rem;
+  background-color: #e4b99c;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.48s ease-out;
+}
+.card__inner::before {
+  content: "";
+  position: absolute;
+  top: var(--y, -100%);
+  left: var(--x, 0);
+  width: 200%;
+  height: 200%;
+  border-radius: inherit;
+  background: radial-gradient(circle, white 3%, transparent 60%);
+  z-index: 1;
+  transition: var(--trans, top 0.48s ease-out, left 0.48s ease-out);
+}
+.card__content {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0.8em;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__text > * {
+  margin-top: 0.4em;
+}
+.card__image {
+  border-radius: calc(var(--radius) / 2);
+  overflow: hidden;
+  z-index: 2;
+}
+.card__image img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+}
+.card__label {
+  color: #fff;
+  background-color: #000;
+  padding: 0.2em 0.8em;
+}
+.card__label, .card__info {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
   font-weight: 700;
-  margin-bottom: 20px;
 }
-.portfolio-details .portfolio-description p {
-  padding: 0;
-} */
+.card__description {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
 
 
 /*--------------------------------------------------------------

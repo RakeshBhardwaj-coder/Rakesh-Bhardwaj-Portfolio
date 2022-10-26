@@ -225,4 +225,77 @@
    */
   new PureCounter();
 
+   /**
+   * 3D Portfolio section hover effect 
+   */
+
+    class Cards {
+      constructor(card) {
+        this.card = card;
+        this.card.inner = card.querySelector(".card__inner");
+    
+        this.init();
+      }
+    
+      animate(e) {
+        this.rect = this.card.getBoundingClientRect();
+    
+        const mouseX = e.clientX,
+          mouseY = e.clientY;
+    
+        const x = mouseX - this.rect.right,
+          y = mouseY - this.rect.bottom;
+    
+        const xPerc = ((this.rect.left - mouseX) / this.card.offsetWidth) * 100,
+          yPerc = ((this.rect.top - mouseY) / this.card.offsetHeight) * 100;
+    
+        const xMiddle = this.card.offsetWidth / 2,
+          yMiddle = this.card.offsetHeight / 2;
+    
+        // Coordinates from the center
+        const xCoord = mouseX - this.rect.left - xMiddle,
+          yCoord = mouseY - this.rect.top - yMiddle;
+    
+        const maxDist = Math.sqrt(Math.pow(xMiddle, 2) + Math.pow(yMiddle, 2)),
+          dist = Math.sqrt(Math.pow(xCoord, 2) + Math.pow(yCoord, 2));
+    
+        this.card.style.setProperty("--trans", "none 0s ease");
+        this.card.style.setProperty("--x", `${xPerc.toFixed(2)}%`);
+        this.card.style.setProperty("--y", `${yPerc.toFixed(2)}%`);
+    
+        this.card.inner.style.setProperty("transition", "transform 0.1s ease-out");
+        this.card.inner.style.transform = `scale3d(1.04, 1.04, 1.04) rotate3d(${
+          ((y * -1 - yMiddle) / this.card.offsetHeight).toFixed(2) * 4
+        }, ${((x * -1 - xMiddle) / this.card.offsetWidth).toFixed(2) * -4}, 0, ${
+          (dist / maxDist) * 12
+        }deg)`;
+      }
+    
+      events() {
+        this.card.addEventListener("mousemove", (e) => {
+          this.animate(e);
+        });
+    
+        this.card.addEventListener("mouseleave", () => {
+          setTimeout(() => {
+            this.card.removeAttribute("style");
+            this.card.inner.removeAttribute("style");
+          }, 10);
+        });
+    
+        window.addEventListener(
+          "resize",
+          () => (this.rect = this.card.getBoundingClientRect())
+        );
+      }
+    
+      init() {
+        this.events();
+      }
+    }
+    
+    document.querySelectorAll(".card").forEach((card) => new Cards(card));
+    
+
+
 })()

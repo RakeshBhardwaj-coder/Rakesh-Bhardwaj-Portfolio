@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rakesh Bhardwaj Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-  
-      <!-- Favicons -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakesh Bhardwaj Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -33,41 +34,100 @@
 
 
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
-    <!-- 
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
+  <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 360px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
       }
-    </style>
-  </head>
 
-  <body>
+      body {
+        border-top: 16px solid #ffa100;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
 
   <!-- ======= Header ======= -->
@@ -145,7 +205,7 @@
                       </div>
                     </div>
                   </div>
-                 
+
                 </div>
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
@@ -156,17 +216,20 @@
                     </div>
                     <p class="my-name">
                       Hello!!!
-                    </br>
-                    My name is Rakesh Bhardwaj
+                      </br>
+                      My name is Rakesh Bhardwaj
                     </p>
                     <p class="lead">
                       I'm a new skill learning person, and because of this habit I get the track of Game Development,
-                      this field was a lot of knowledge to quench my hunger for learning, So I got a lot of knowledge and fun.
-                      I'm Joking There is no fun in Game Development, even you get lots of stress and failure in your game and also in your life.
+                      this field was a lot of knowledge to quench my hunger for learning, So I got a lot of knowledge
+                      and fun.
+                      I'm Joking There is no fun in Game Development, even you get lots of stress and failure in your
+                      game and also in your life.
 
                     </p>
                     <p class="lead">
-                      But if your Fundamental is clear and you have the courage to face that failure not only in your life but also in your game, So...
+                      But if your Fundamental is clear and you have the courage to face that failure not only in your
+                      life but also in your game, So...
                     </p>
                     <p class="lead">
                       > Welcome to Game World!!!
@@ -184,15 +247,15 @@
 
     <section id="skills" class="skills">
       <div class="container">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Skills
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-            <p class="subtitle-a">
-              My Skills form the GitHub :
-            </p>
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Skills
+          </h3>
+          <div class="line-mf"></div>
+        </div>
+        <p class="subtitle-a">
+          My Skills form the GitHub :
+        </p>
 
         <div class="skill-table">
           <div class="progress">
@@ -223,7 +286,7 @@
             </div>
           </div>
         </div>
-        </div>
+      </div>
       </div>
     </section><!-- End skills Section -->
 
@@ -238,7 +301,8 @@
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -249,7 +313,8 @@
                 <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">YEARS OF EXPERIENCE</span>
               </div>
             </div>
@@ -260,7 +325,8 @@
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -271,7 +337,8 @@
                 <span class="ico-circle"><i class="bi bi-award"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">AWARD WON</span>
               </div>
             </div>
@@ -280,173 +347,233 @@
       </div>
     </div><!-- End Counter Section -->
 
-   <!-- ======= Portfolio Section ======= -->
-   <section id="portfolio" class="portfolio section-bg">
-    <div class="container">
-
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
       <div class="title-box text-center">
         <h3 class="title-a">
+          </br>
           Portfolio
         </h3>
         <div class="line-mf"></div>
       </div>
-
       <p class="subtitle-a col-lg-12 d-flex justify-content-center">
         All my work is given below
       </p>
-     
-      <!-- show all work in given parts  -->
-<!-- 
-      <div class="row" data-aos="fade-up">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
 
-            <li data-filter=".filter-project-videos">Project Videos</li>
-            <li data-filter=".filter-game">Games</li>
-            <li data-filter=".filter-app">Apps</li>
-            <li data-filter=".filter-web">Websites</li>
-          </ul>
-        </div>
-      </div> -->
+      <div class="threed-container">
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <!-- 3D Portfolio Section -->
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
+        <ul class="cards">
+          <li class="card">
 
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-1.jpg" alt="#" />
-            <figcaption>
-              <h3>Working with my 2D Game Project in Unity.</h3></br>
-              <h4>This is my 2d game project, which animator work just finished, now I can move up to build the game
-                much as I can.</h4>
-            </figcaption>
-            <a href="https://youtu.be/bqPn6VXZpWg" aria-label="#" target="_blank"></a>
-          </figure>
+            <div class="card__inner">
 
-        </div>
+              <div class="card__content">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
+                <a href="https://youtu.be/bqPn6VXZpWg" aria-label="#" target="_blank">
+                  <div class="card__image">
 
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-2.jpg" alt="#" />
-            <figcaption>
-              <h3>Jumping Game with looping sound.</h3></br>
-              <h4>Jumping Unity Game project
-                ,Chrome Dinosaur game concept.
-              </h4>
-            </figcaption>
-            <a href="https://youtu.be/5MjAzbnt7Xo" aria-label="#" target="_blank"></a>
-          </figure>
+                    <img src="assets/img/portfolio/portfolio-1.jpg" alt="loading..." />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">Game Animation</div>
+                  <div class="card__info">
+                    Working with my 2D Game Project in Unity.
+                  </div>
+                  <div class="card__description">
+                    This is my 2d game project, which animator work just finished, now I can move up to build the game
+                    much as I can.
+                    <a href="https://youtu.be/bqPn6VXZpWg" aria-label="#" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
+                <a href="https://youtu.be/5MjAzbnt7Xo" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-2.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Jumping Game with looping sound.
+                  </div>
+                  <div class="card__description">
+                    Jumping Unity Game project
+                    ,Chrome Dinosaur game concept the player jump and game will run till player not die, and music is
+                    also
+                    in looping mode.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
+                <a href="https://youtu.be/Z8gnNBhJoZs" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="#" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Mouse Clicking Game Project with complete UI.
+                  </div>
+                  <div class="card__description">
+                    This game has the concept of a fruit ninja game.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
+                <a href="https://youtu.be/xQH4KkA8M2o" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-6.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Unlimited enemy generating game Project.
+                  </div>
+                  <div class="card__description">
+                    Kill the unlimited spawning enemy Make a High Score.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
 
-        </div>
+                <a href="https://youtu.be/3Vud1z5cnWU" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-5.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Simple MultiPlayerGame Prototype...
+                  </div>
+                  <div class="card__description">
+                    The Simple Game prototype for practice Game Development.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
+                <a href="https://youtu.be/T2JMXtBuN3E" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-4.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    3D Zero Code Game, for beginners
+                  </div>
+                  <div class="card__description">
+                    This video is related to 3D game development, which faced the problem of programming in game
+                    development,So Here is the game assets you can develop zero code game with good visualization.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
 
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-3.jpg" alt="#" />
-            <figcaption>
-              <h3>Mouse Clicking Game Project with complete UI.</h3></br>
-              <h4>This game has the concept of a fruit ninja game.</h4>
-            </figcaption>
-            <a href="https://youtu.be/Z8gnNBhJoZs" aria-label="#" target="_blank"></a>
-          </figure>
+                <a href="https://youtu.be/a3wRwMmf3YY" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-7.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Make 3D Game using programming.
+                  </div>
+                  <div class="card__description">
+                    This Video is related to the completion of the project, which is for beginners who are wanting to
+                    learn to program in 3D game development.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
 
-        </div>
+                <a href="https://youtu.be/hLDCRDduWZE" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-8.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    The Chase, Short Animation Movie
+                  </div>
+                  <div class="card__description">
+                    The chase short animation movie, made by unity.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__inner">
+              <div class="card__content">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-6.jpg" alt="#" />
-            <figcaption>
-              <h3>Unlimited enemy generating game Project.</h3></br>
-              <h4>Kill the unlimited spawning enemy Make a High Score.</h4>
-            </figcaption>
-            <a href="https://youtu.be/xQH4KkA8M2o" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-5.jpg" alt="#" />
-            <figcaption>
-              <h3>Simple MultiPlayerGame Prototype...</h3></br>
-              <h4>The Simple Game prototype for practice Game Development.
-              </h4>
-            </figcaption>
-            <a href="https://youtu.be/3Vud1z5cnWU" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" alt="#" />
-            <figcaption>
-              <h3>3D Zero Code Game, for beginners</h3></br>
-              <h4>
-                This video is related to 3D game development, which faced the problem of programming in game
-                development,So Here is the game assets you can develop zero code game with good visualization.</h4>
-            </figcaption>
-            <a href="https://youtu.be/T2JMXtBuN3E" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" alt="#" />
-            <figcaption>
-              <h3>Make 3D Game using programming.</h3></br>
-              <h4>This Video is related to the completion of the project, which is for beginners who are wanting to
-                learn to program in 3D game development.</h4>
-            </figcaption>
-            <a href="https://youtu.be/a3wRwMmf3YY" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" alt="#" />
-            <figcaption>
-              <h3>The Chase, Short Animation Movie</h3></br>
-              <h4>The chase short animation movie, made by unity.
-              </h4>
-            </figcaption>
-            <a href="https://youtu.be/hLDCRDduWZE" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project-videos">
-
-          <figure class="project-card">
-            <img src="assets/img/portfolio/portfolio-9.jpg" alt="#" />
-            <figcaption>
-              <h3>Basic Animation Workflow, Made in Unity Timeline.</h3></br>
-              <h4>Cool Animation movie preview in unity and an enjoyable lesson in unity learn,
-                about timeline, animation, cinemachine(camera tracking), unity recorder, open world, short animation
-                movie with unity is really fun and learnable.</h4>
-            </figcaption>
-            <a href="https://youtu.be/XZVUIUlz4wQ" aria-label="#" target="_blank"></a>
-          </figure>
-
-        </div>
+                <a href="https://youtu.be/XZVUIUlz4wQ" aria-label="#" target="_blank">
+                  <div class="card__image">
+                    <img src="assets/img/portfolio/portfolio-9.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="card__text">
+                  <div class="card__label">rare</div>
+                  <div class="card__info">
+                    Basic Animation Workflow, Made in Unity Timeline.
+                  </div>
+                  <div class="card__description">
+                    Cool Animation movie preview in unity and an enjoyable lesson in unity learn,
+                    about timeline, animation, cinemachine(camera tracking), unity recorder, open world, short animation
+                    movie with unity is really fun and learnable.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
 
 
+        <!-- End 3D Portfolio Section -->
 
       </div>
+    </section><!-- End Portfolio Section -->
 
-    </div>
-  </section><!-- End Portfolio Section -->
 
-  
+
+
     <!-- ======= Testimonials Section ======= -->
     <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
@@ -613,7 +740,8 @@
     </section><!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
@@ -632,22 +760,26 @@
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -723,7 +855,8 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -735,28 +868,29 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
 </html>
