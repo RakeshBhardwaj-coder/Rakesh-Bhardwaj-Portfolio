@@ -825,6 +825,24 @@ a:hover {
 # About
 --------------------------------------------------------------*/
 
+.my-name {
+  color: #149ddd;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+
+}
+.about-info{
+  font-size: large;
+    font-weight: 400;
+}
+
+.lead {
+  font-size: large;
+  font-weight: 600;
+}
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
