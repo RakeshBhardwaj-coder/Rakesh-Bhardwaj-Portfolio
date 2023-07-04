@@ -55,9 +55,6 @@ span{
   padding: 0;
   background-color: #387ea9;
 }
-h3{
-margin-top: 4px;
-}
 #devName{
   font-size: x-large;
 }
@@ -66,7 +63,7 @@ margin-top: 4px;
     background-size: cover;
     background-position-x: 0px;
     background-position-y: 0px;
-    background-image: url(img/d7.png);
+    background-image: url(assets/img2/d7.png);
     background-size: auto A4;
     /* background-color: #2e3a44; */
     background-color: #b8b8b8;
@@ -99,7 +96,7 @@ margin-top: 4px;
     background-position-y: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    background-image: url(img/de3.png);
+    background-image: url(assets/img2/de3.png);
     /* background-color: #2e3a44; */
     background-color: #ced6de;
   }
@@ -166,8 +163,10 @@ h2{
   text-transform: capitalize;
 }
 h3{
+  margin-top: 4px;
   font-size: xx-small;
   font-weight: normal;
+  text-align: justify;
   color: #000000;
   line-height: 1;
 }
