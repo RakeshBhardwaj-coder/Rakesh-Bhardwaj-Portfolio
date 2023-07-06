@@ -2,6 +2,17 @@
   size: A4;
   margin: 0;
 }
+.bg{
+  margin: 0;
+  background-size: cover;
+  background-position-x: 0px;
+  background-position-y: -10px;
+  background-image: url(assets/img2/d7.png);
+  background-size: auto A4;
+  /* background-color: #2e3a44; */
+  background-repeat: no-repeat;
+  background-color: #b8b8b8;
+}
 col,row,hr,br{
   margin: 0;
   padding: 0;
@@ -60,14 +71,8 @@ span{
 }
 @media print{
   .bg{
-    background-size: cover;
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-image: url(assets/img2/d7.png);
-    background-size: auto A4;
-    /* background-color: #2e3a44; */
-    background-color: #b8b8b8;
-  }
+  background-position-y: 0px;
+    }
   .print-button{
     display: none;
   }
@@ -87,21 +92,21 @@ span{
     background-color: #b1b1b1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .bg{
-    border-radius: 10px 10px 0 0;
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: -70px;
-    background-position-y: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* .bg{
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    background-image: url(assets/img2/de3.png);
-    /* background-color: #2e3a44; */
-    background-color: #ced6de;
-  }
+  background-image: url(assets/img2/d7.png);
+ background-color: #2e3a44; 
+  background-color: #ced6de;
+} */
  
 }
+
 .profile{
   justify-content: center;
    display: flex;

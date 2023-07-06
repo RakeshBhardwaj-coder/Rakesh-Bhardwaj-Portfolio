@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: hsl(0, 0%, 12%);
 }
 
 a {
