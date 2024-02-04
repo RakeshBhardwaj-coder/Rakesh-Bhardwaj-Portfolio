@@ -26,10 +26,10 @@ h1,h2,h3,h4,h5,h6,h7,br{
   margin: 2px 0 0 0;
   padding: 0 0 0 0;
   line-height: 1;
-  font-size:11px;
+  font-size:14px;
 }
 .sec{
-  padding-top: 0px;
+  margin: 10px 0 0 0;
 }
 a,p,span{
   margin: 0;
@@ -237,9 +237,14 @@ li{
 .space2{
   margin: 0;
   padding: 0;
-  margin-top: 2px;
+  margin-top: 15px;
  }
 
+ .space3{
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+ }
 .project-name{
   color: #000000;
   line-height: 1;
