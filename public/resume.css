@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6,h7,br{
   margin: 0;
   padding: 0;
 }
+
 #smallText{
   margin: 2px 0 0 0;
   padding: 0 0 0 0;
@@ -159,7 +160,7 @@ margin: 5px;
   width: 20px;
 }
 h1{
-  font-size: small;
+  font-size: medium;
   text-transform: uppercase;
   font-weight: bold;
   color: #893333;
@@ -167,12 +168,12 @@ h1{
 h2{
   font-weight: bold;
   color: #000000;
-  font-size: x-small;
+  font-size: small;
   text-transform: capitalize;
 }
 h3{
   margin-top: 4px;
-  font-size: xx-small;
+  font-size: small;
   font-weight: normal;
   text-align: justify;
   color: #000000;
@@ -180,7 +181,7 @@ h3{
 }
 h6{
   margin-top: 2px;
-  font-size: xx-small;
+  font-size: x-small;
   font-weight: normal;
   color: #387ea9;
   line-height: 1;
@@ -189,7 +190,7 @@ h6{
 
 .list li{
   margin-top: 2px;
-  font-size: xx-small;
+  font-size: x-small;
   font-weight: 500;
   color: #000000;
 
@@ -199,10 +200,10 @@ ul{
   padding: 0 10px 0 15px;
 }
 li{
-  font-size: xx-small;
+  font-size: x-small;
 }
 #details{
-  font-size: x-small;
+  font-size: large;
   font-weight: normal;
   color: #000000;
   text-align: justify;
@@ -252,29 +253,29 @@ li{
 }
 .project-details{
   margin-top: 2px;
-  font-size: small;
+  font-size: medium;
   text-align: justify;
 }
 .language-name{
   line-height: 1;
   font-size: small;
   text-align: justify;
-}
+} 
 .language-details{
   margin-top: 2px;
   line-height: 1;
-  font-size: xx-small;
+  font-size: x-small;
   color: #387ea9;
   font-weight: 500;
 }
 #interests{
-  font-size: xx-small;
+  font-size: x-small;
   padding: 5px 5px;
   border-radius: 5px;
   border: solid 2px gray;
 }
 footer {
-  font-size: xx-small;
+  font-size: x-small;
 
   text-align: center;
   color: #404040;
