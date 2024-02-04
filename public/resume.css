@@ -71,6 +71,10 @@ span{
 #devName{
   font-size: xx-large;
 }
+
+.certificate h3{
+  padding-right: 10px;
+}
 @media print{
   .bg{
     
