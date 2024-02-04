@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6,h7,br{
   margin: 2px 0 0 0;
   padding: 0 0 0 0;
   line-height: 1;
-  font-size:14px;
+  font-size:11px;
 }
 .sec{
   margin: 10px 0 0 0;
@@ -51,7 +51,7 @@ a{
 .title{
   margin: 0;
   color: #44b6be;
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Rajdhani', sans-serif;
@@ -59,16 +59,16 @@ a{
 .name{
   margin: 2px 0 0 0;
   font-weight: 500;
-  font-size: small;
+  font-size: large;
 }
 span{
-  font-size: xx-small;
+  font-size: small;
   margin: 0;
   padding: 0;
   background-color: #387ea9;
 }
 #devName{
-  font-size: x-large;
+  font-size: xx-large;
 }
 @media print{
   .bg{
@@ -142,7 +142,7 @@ margin: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1;
-  font-size: xx-small;
+  font-size:small;
   text-align: start;
   color: white;
   background-color: #1c2328;
@@ -223,6 +223,7 @@ li{
   font-size: xx-small;
   background-color: rgb(201, 201, 201);
   padding: 5px 10px;
+  margin: 10px 0 10px 0;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -243,7 +244,7 @@ li{
  .space3{
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 5px;
  }
 .project-name{
   color: #000000;
