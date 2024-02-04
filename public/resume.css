@@ -75,6 +75,11 @@ span{
 .certificate h3{
   padding-right: 10px;
 }
+.achievements h3{
+  padding-right: 10px;
+}
+
+
 @media print{
   .bg{
     
@@ -220,15 +225,23 @@ li{
 .part2{
   margin-right: 30px;
 }
+.part3{
+  margin-left: 2em;
+}
+.part4{
+  margin-right: 30px;
+}
 #workExp{
   margin-top: 0px;
 }
 
+
+
 #skills{
-  font-size: xx-small;
+  font-size:    small;
   background-color: rgb(201, 201, 201);
   padding: 5px 10px;
-  margin: 10px 0 10px 0;
+  margin: 0 5px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -250,6 +263,11 @@ li{
   margin: 0;
   padding: 0;
   margin-top: 5px;
+ }
+ .space4{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
  }
 .project-name{
   color: #000000;
