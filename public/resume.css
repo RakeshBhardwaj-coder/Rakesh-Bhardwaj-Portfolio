@@ -22,14 +22,16 @@ h1,h2,h3,h4,h5,h6,h7,br{
   margin: 0;
   padding: 0;
 }
+
 #smallText{
   margin: 2px 0 0 0;
   padding: 0 0 0 0;
   line-height: 1;
   font-size:11px;
 }
+
 .sec{
-  padding-top: 0px;
+  margin: 5px 0 0 0;
 }
 a,p,span{
   margin: 0;
@@ -51,7 +53,7 @@ a{
 .title{
   margin: 0;
   color: #44b6be;
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Rajdhani', sans-serif;
@@ -59,17 +61,26 @@ a{
 .name{
   margin: 2px 0 0 0;
   font-weight: 500;
-  font-size: small;
+  font-size: large;
 }
 span{
-  font-size: xx-small;
+  font-size: small;
   margin: 0;
   padding: 0;
   background-color: #387ea9;
 }
 #devName{
-  font-size: x-large;
+  font-size: xx-large;
 }
+
+.certificate h3{
+  padding-right: 10px;
+}
+.achievements h3{
+  padding-right: 10px;
+}
+
+
 @media print{
   .bg{
     
@@ -142,7 +153,7 @@ margin: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1;
-  font-size: xx-small;
+  font-size:small;
   text-align: start;
   color: white;
   background-color: #1c2328;
@@ -159,7 +170,7 @@ margin: 5px;
   width: 20px;
 }
 h1{
-  font-size: small;
+  font-size: medium;
   text-transform: uppercase;
   font-weight: bold;
   color: #893333;
@@ -167,12 +178,12 @@ h1{
 h2{
   font-weight: bold;
   color: #000000;
-  font-size: x-small;
+  font-size: small;
   text-transform: capitalize;
 }
 h3{
   margin-top: 4px;
-  font-size: xx-small;
+  font-size: small;
   font-weight: normal;
   text-align: justify;
   color: #000000;
@@ -180,7 +191,7 @@ h3{
 }
 h6{
   margin-top: 2px;
-  font-size: xx-small;
+  font-size: small;
   font-weight: normal;
   color: #387ea9;
   line-height: 1;
@@ -189,7 +200,7 @@ h6{
 
 .list li{
   margin-top: 2px;
-  font-size: xx-small;
+  font-size: small;
   font-weight: 500;
   color: #000000;
 
@@ -199,10 +210,10 @@ ul{
   padding: 0 10px 0 15px;
 }
 li{
-  font-size: xx-small;
+  font-size: x-small;
 }
 #details{
-  font-size: x-small;
+  font-size: large;
   font-weight: normal;
   color: #000000;
   text-align: justify;
@@ -215,14 +226,23 @@ li{
 .part2{
   margin-right: 30px;
 }
+.part3{
+  margin-left: 2em;
+}
+.part4{
+  margin-right: 30px;
+}
 #workExp{
   margin-top: 0px;
 }
 
+
+
 #skills{
-  font-size: xx-small;
+  font-size:    small;
   background-color: rgb(201, 201, 201);
   padding: 5px 10px;
+  margin: 0 5px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -237,38 +257,48 @@ li{
 .space2{
   margin: 0;
   padding: 0;
-  margin-top: 2px;
+  margin-top: 15px;
  }
 
+ .space3{
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+ }
+ .space4{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+ }
 .project-name{
   color: #000000;
   line-height: 1;
 }
 .project-details{
   margin-top: 2px;
-  font-size: small;
+  font-size: medium;
   text-align: justify;
 }
 .language-name{
   line-height: 1;
   font-size: small;
   text-align: justify;
-}
+} 
 .language-details{
   margin-top: 2px;
   line-height: 1;
-  font-size: xx-small;
+  font-size: x-small;
   color: #387ea9;
   font-weight: 500;
 }
 #interests{
-  font-size: xx-small;
+  font-size: x-small;
   padding: 5px 5px;
   border-radius: 5px;
   border: solid 2px gray;
 }
 footer {
-  font-size: xx-small;
+  font-size: x-small;
 
   text-align: center;
   color: #404040;
